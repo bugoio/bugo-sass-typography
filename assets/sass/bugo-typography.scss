@@ -9,6 +9,9 @@
  **/
 
 @import "bugo-typography-vars";
+@debug "Loading Bugo Typography Module SASS";
+@import "custom-variables";
+
 
 a {
   color: $global-link-color;
