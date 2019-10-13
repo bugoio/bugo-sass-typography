@@ -58,6 +58,7 @@ h6,
   }
 
   a {
+    font-weight: inherit;
     text-decoration: none;
     color: $heading-link-color;
     @media (codefers-color-scheme: dark) {
@@ -85,6 +86,13 @@ h6,
 @include heading-size(aside h4, $heading-4, $heading-sidebar);
 @include heading-size(aside h5, $heading-5, $heading-sidebar);
 @include heading-size(aside h6, $heading-6, $heading-sidebar);
+
+@include heading-size(d1, $display-1);
+@include heading-size(d2, $display-2);
+@include heading-size(d3, $display-3);
+@include heading-size(d4, $display-4);
+@include heading-size(d5, $display-5);
+@include heading-size(d6, $display-6);
 
 small,
 .small {
