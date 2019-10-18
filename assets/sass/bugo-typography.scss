@@ -150,3 +150,9 @@ pre {
   @include space-element-x(padding, $code-padding-left, $code-padding-right);
   @include space-element-y(padding, $code-padding-top, $code-padding-bottom);
 }
+
+
+.nowrap {
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
