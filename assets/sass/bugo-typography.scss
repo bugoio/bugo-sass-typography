@@ -73,6 +73,10 @@ h6,
   }
 }
 
+h1 {
+  margin-top: 0;
+}
+
 @include heading-size(h1, $heading-1);
 @include heading-size(h2, $heading-2);
 @include heading-size(h3, $heading-3);
