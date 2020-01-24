@@ -121,11 +121,12 @@ blockquote {
   @include space-element-y(margin, $blockquote-margin-top, $blockquote-margin-bottom);
   @include space-element-x(padding, $blockquote-padding-left, $blockquote-padding-right);
   @include space-element-y(padding, $blockquote-padding-top, $blockquote-padding-bottom);
-
-  @media (prefers-color-scheme: dark) {
-    color: $quote-color-dark;
-    background: $quote-bg;
-    border-left: 10px solid $quote-accent;
+  @if $global-dark-mode {
+    @media (prefers-color-scheme: dark) {
+      color: $quote-color-dark;
+      background: $quote-bg;
+      border-left: 10px solid $quote-accent;
+    }
   }
 }
 
@@ -159,4 +160,15 @@ pre {
 .nowrap {
   white-space: nowrap;
   flex-wrap: nowrap;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+@for $i from 1 through 9 {
+  .fw-#{$i} {
+    font-weight: #{$i}00;
+  }
 }
